@@ -16,7 +16,6 @@ class ImageController extends Controller
         return view('admin.form-img.image-store');
     }
     public function store(Request $request) {
-        // dd($request->file('image'));
         Storage::put('public/img/', $request->file('image'));
         $image = new Image();
         $image->src = $request->file('image')->hashName();

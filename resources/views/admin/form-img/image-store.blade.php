@@ -9,7 +9,6 @@
             <div class="mt-4">
                 <label for="image">Votre image</label>
                 <input type="file" name="image">
-                {{-- <input type="file" name="image" id="image"> --}}
             </div>
             <button class="btn btn-primary mt-4" type="submit">Envoyer</button>
         </form>
