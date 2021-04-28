@@ -22,4 +22,9 @@ class ImageController extends Controller
         $image->save();
         return redirect()->route('adminHome');
     }
+    public function destroy(Image $id) {
+        Storage::delete(['public/img/' . $id->image]);
+        $id->delete();
+        return redirect()->route('adminHome');
+    }
 }
