@@ -56,4 +56,7 @@ class ImageController extends Controller
         }
         return redirect()->route('adminHome');
     }
+    public function download(Image $id) {
+        return Storage::download('public/img/' . $id->src);
+    }
 }

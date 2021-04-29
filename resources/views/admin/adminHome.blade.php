@@ -11,6 +11,9 @@
                 <a href={{route('admin.image.edit', $image->id)}}>
                     <button class="btn btn-primary mr-2">Edit</button>
                 </a>
+                <a href={{route('admin.image.download', $image->id)}}>
+                    <button class="btn btn-success">Download</button>
+                </a>
                 <form method="post" action={{route('admin.image.destroy', $image->id)}}>
                     @csrf
                     @method('DELETE')

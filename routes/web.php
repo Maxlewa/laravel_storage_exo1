@@ -20,3 +20,7 @@ Route::delete('/admin/delete/{id}/image', [ImageController::class, 'destroy'])->
 
 Route::get('/admin/edit/{id}/image', [ImageController::class, 'edit'])->name('admin.image.edit');
 Route::put('/admin/update/{id}/image', [ImageController::class, 'update'])->name('admin.image.update');
+
+// Download
+
+Route::get('/admin/download/{id}/image', [ImageController::class, 'download'])->name('admin.image.download');
