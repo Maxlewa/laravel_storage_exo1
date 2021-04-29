@@ -4,11 +4,17 @@
     <div class="text-center mt-4">
         <h1>IMAGES STORAGE</h1>
         <hr>
-        <form action={{route('admin.image.store')}} enctype="multipart/form-data" method="POST">
+        <form action={{route('admin.image.store')}} enctype="multipart/form-data" method="POST" class="mt-4">
             @csrf
-            <div class="mt-4">
-                <label for="image">Votre image</label>
-                <input type="file" name="image">
+            <div class="text-center">
+                <div class="mb-4">
+                    <label for="image">Votre image - Input</label>
+                    <input type="file" name="image">
+                </div>
+                <div>
+                    <label for="image">Votre image - URL</label>
+                    <input type="text" name="image">
+                </div>
             </div>
             <button class="btn btn-primary mt-4" type="submit">Envoyer</button>
         </form>

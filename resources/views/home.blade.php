@@ -16,7 +16,7 @@
         @endforeach
 
         <a href={{route('adminHome')}}>
-            <button class="btn btn-dark">ADMIN</button>
+            <button class="btn btn-dark mb-4">ADMIN</button>
         </a>
     </div>
 @endsection
